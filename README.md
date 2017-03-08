@@ -1,6 +1,6 @@
 # README #
 
-Visit to use (http://molecules.poplauki.eu)[page]
+Visit to use (page)[http://molecules.poplauki.eu]
 
 ### What is this repository for? ###
 
