@@ -1,0 +1,31 @@
+{
+  "name": "3d-molecule-viewer",
+  "version": "1.0.0",
+  "description": "Service to view molecules in the 3D with browser",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wirtaw/3d-molecule-viewer.git"
+  },
+  "keywords": [
+    "3d",
+    "chemistry",
+    "molecule",
+    "Medeleev",
+    "table",
+    "formulas"
+  ],
+  "author": "Vladimir Poplavskij",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wirtaw/3d-molecule-viewer/issues"
+  },
+  "homepage": "https://github.com/wirtaw/3d-molecule-viewer#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
