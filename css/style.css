@@ -18,3 +18,11 @@
 #formula-buttons {
     display: none;
 }
+
+#formula-viewer {
+    height:35px;
+    font-size:1.5em;
+    line-height:35px;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
