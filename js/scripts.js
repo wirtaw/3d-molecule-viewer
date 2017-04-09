@@ -5,78 +5,18 @@ $(document).ready(function() {
             families: ['Lora:400,700']
         }
     });
-    var form = $('#form-formula');
-    var input = $('#inputFormula');
+    let form = $('#form-formula');
+    let input = $('#inputFormula');
 
     form.submit( function(ev) {
         ev.preventDefault();
     });
 
-    input.on('change',function() {
-        var value = $(this).val();
-        if ('' !== value) {
-            checkValue(value);
-        } else {
-            //show alert about empty
-        }
-    });
-
-    function checkValue(val) {
-        //get formula from vocalbury
-        var viewer = $('#formula-viewer');
-        var canvas = $('#formula-canvas');
-        var width = parseInt(canvas.width());
-        var height = parseInt(canvas.height());
-        viewer.html('');
-        var equation = '';
-        var formula = '';
-        var elems = {};
-        if ('water' === val) {
-            equation = 'H<sub>2</sub>O';
-            elems = {'H':2,'O':1};
-            formula = 'H2O';
-        } else if ('oxygen' === val) {
-            equation = 'O<sub>2</sub>';
-            elems = {'O':2};
-            formula = 'O2';
-        } else if ('methane' === val) {
-            equation = 'CH<sub>4</sub>';
-            elems = {'C':1,'H':4};
-            formula = 'CH4';
-        }
-        viewer.html(equation);
-        getCSSImage(formula, function(circles) {
-            var stage = new Konva.Stage({
-                container: 'formula-canvas',
-                width: width,
-                height: height
-            });
-            var layer = new Konva.Layer();
-
-            for(var i=0; i< circles.length; i++) {
-                var atom = new Konva.Ellipse({
-                    x: circles[i].pos_x,
-                    y: circles[i].pos_y,
-                    radius: {
-                        x: circles[i].radius,
-                        y: circles[i].radius
-                    },
-                    fill: circles[i].color,
-                    stroke: 'black',
-                    strokeWidth: 1
-                });
-                layer.add(atom);
-            }
-
-            stage.add(layer);
-            layer.draw();
-        });
-    }
 });
 
 function getCSSImage(formula, callback) {
-    var result = [];
-    var item = {};
+    let result = [];
+    let item = {};
     switch(formula) {
         case 'H2O':
             item = {
@@ -156,6 +96,5 @@ function getCSSImage(formula, callback) {
             result.push(item);
             break;
     }
-
     callback(result);
 }

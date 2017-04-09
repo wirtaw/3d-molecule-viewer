@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3D molecule viewer - Index page</title>
+    <title>2D/3D molecule viewer - Index page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Service to view molecules in the 3D with browser">
+    <meta name="description" content="Service to view molecules in the 2D/3D with browser">
     <meta name="author" content="Vladimir Poplavskij @wirtaw">
 
     <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" id="app-input-viewer">
     <div class="row">
         <div class="col-md-12">
             <h3 class="text-left" id="page-header">
@@ -27,30 +27,30 @@
             </h3>
         </div>
     </div>
-    <div class="row">
+    <div class="row" >
         <div class="col-md-6">
             <form class="form-horizontal" role="form" method="post" action="#" id="form-formula">
                 <div class="form-group">
 
                     <label for="inputFormula" class="col-sm-2 control-label small">
-                        Formula
+                        {{ formula }}
                     </label>
                     <div class="col-sm-10">
-                        <input type="input" class="form-control input-sm" id="inputFormula">
+                        <input type="text" class="form-control input-sm" id="inputFormula">
+                        <select v-model="message" v-on:change="selectMaterial">
+                            <option v-for="element in list" v-bind:value="element.title">{{ element.title }}</option>
+                        </select>
                     </div>
                 </div>
             </form>
         </div>
         <div class="col-md-6">
-            <div id="formula-viewer">
-
-            </div>
+            {{ message }}
         </div>
     </div>
     <div class="row">
         <div class="col-md-10">
-            <div id="formula-canvas">
-            </div>
+            <div id="formula-canvas">{{ canvas }}</div>
         </div>
         <div class="col-md-2">
             <div class="btn-group btn-group-md btn-group-vertical" id="formula-buttons">
@@ -78,11 +78,13 @@
         </div>
     </div>
 </div>
-
-<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="./bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
 <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 <script src="https://cdn.rawgit.com/konvajs/konva/1.5.0/konva.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/build.js"></script>
 </body>
 </html>
