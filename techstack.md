@@ -81,6 +81,7 @@ wirtaw/3d-molecule-viewer is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/4697/default_2d5a1d7c5eb520cdeb7db120e767345004a1d0d4.png' alt='Q'/> [Q](https://github.com/kriskowal/q) – Javascript Utilities & Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/101756/default_4f2991cba3ec7fdd1cc87de69f4868157b0f2001.png' alt='Vercel AI SDK'/> [Vercel AI SDK](https://sdk.vercel.ai/docs) – Large Language Model Tools
 
+
 Full tech stack [here](/techstack.md)
 
 &lt;--- Readme.md Snippet with images End ---&gt;
@@ -559,7 +560,6 @@ Full tech stack [here](/techstack.md)
 |[btoa](https://www.npmjs.com/btoa)|v1.1.2|03/11/17|Vladimir Poplavskij |MIT,Apache-2.0|N/A|
 |[co](https://www.npmjs.com/co)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[connect](https://www.npmjs.com/connect)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
-|[copy](https://www.npmjs.com/copy)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[css](https://www.npmjs.com/css)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[github](https://www.npmjs.com/github)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[grunt-autoprefixer](https://www.npmjs.com/grunt-autoprefixer)|v3.0.4|03/11/17|Vladimir Poplavskij |MIT|N/A|
@@ -585,7 +585,6 @@ Full tech stack [here](/techstack.md)
 |[ink](https://www.npmjs.com/ink)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[ip](https://www.npmjs.com/ip)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[is](https://www.npmjs.com/is)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
-|[jscs](https://www.npmjs.com/jscs)|N/A|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[lab](https://www.npmjs.com/lab)|N/A|03/11/17|Vladimir Poplavskij |BSD-3-Clause|N/A|
 |[load-grunt-tasks](https://www.npmjs.com/load-grunt-tasks)|v3.5.0|03/11/17|Vladimir Poplavskij |MIT|N/A|
 |[markdown-it](https://www.npmjs.com/markdown-it)|v7.0.0|03/11/17|Vladimir Poplavskij |MIT|[CVE-2022-21670](https://github.com/advisories/GHSA-6vfc-qv3f-vr6c) (Moderate)|
